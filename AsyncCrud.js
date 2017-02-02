@@ -152,7 +152,8 @@ export default class AsyncCrud {
     }
 }
 const defaultState = {
-    loading: false
+    loading: false,
+    data: []
 }
 const ASYNC_META = {
     REQUEST: "REQUEST",

@@ -39,7 +39,7 @@ export default class AsyncModel {
             const props = state[name] || { data: [] }
             props.getColumns = Util.getColumns.bind(null, model)
             return {
-                [`${name}Data`]: props
+                [name]: props
             }
         }
 
