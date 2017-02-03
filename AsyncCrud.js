@@ -1,5 +1,3 @@
-const Util = require('../rules/Util')
-
 export default class AsyncCrud {
     constructor(name, schema) {
         // this.actions = new Actions(name)
@@ -112,9 +110,9 @@ export default class AsyncCrud {
         return (a, b) => {
             for(const f of keyFields){
                 if(dateFields.indexOf(f) >= 0){
-                    // va = a[f].getTime()
-                    // vb = b[f].getTime()
-                    if(!Util.dateEqual(a[f], b[f])){
+                    va = a[f].getTime()
+                    vb = b[f].getTime()
+                    if(va !== vb){
                         return false
                     }
                 }else if(a[f] !== b[f]){
