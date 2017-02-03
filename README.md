@@ -119,6 +119,7 @@ const {data, loading} = this.props.employee;
   ```
 * The returned data from server restful web service must be an array or a single model object
 * The Date returned from server restful web service must be ISO standard format (YYYY-MM-DDThh:mm:ss.SSSZ)
+
 ## License
 
 This project is licensed under the MIT License
