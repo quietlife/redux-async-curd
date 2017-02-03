@@ -5,7 +5,7 @@ Most applications contains lots of simple CRUD operations. There are too many bo
 
 redux-async-curd provides a way to use a simple contract instead of boilerplate codes to create CRUD calls.
 
-All uses need to do is:
+All users need to do is:
 * Create simple models (like JAVA Beans) using [yup](https://github.com/jquense/yup)
 * Register reducers automatically created from models
 * Connect CRUD actions (auto created) and results to your component
