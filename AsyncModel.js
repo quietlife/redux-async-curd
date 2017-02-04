@@ -68,7 +68,7 @@ class Util {
         if (!name || name.length === 0)
             return ''
         name = name.replace(/[A-Z]/, ' $&')
-        return name.charAt(0).toUpperCase() + name.substr(l)
+        return name.charAt(0).toUpperCase() + name.substr(1)
     }
     static addYupMethod(method, defaultValue = {}) {
         const field = `_${method}`
@@ -81,17 +81,6 @@ class Util {
             return next
         })
     }
-    // static addIsKeyMethod() {
-    //     const field = '_isKey'
-    //     yup.addMethod(yup.mixed, isKey, function (props) {
-    //         if (props === undefined) {
-    //             return this[field] || false
-    //         }
-    //         const next = this.clone()
-    //         next[field] = props
-    //         return next
-    //     })
-    // }
 }
 Util.addYupMethod('grid')
 Util.addYupMethod('isKey', false)
